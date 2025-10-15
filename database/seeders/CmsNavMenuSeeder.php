@@ -20,7 +20,7 @@ class CmsNavMenuSeeder extends Seeder
 
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
-        ]);
+        ], 'cms_nav_menu_id');
 
         $aboutUsWebpage = Webpage::where('name', 'About us')->first();
         DB::table('cms_nav_menu_item')->insert([
